@@ -1,12 +1,225 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+{% extends 'header.html.twig' %} {% block body %}
+
+
+ <header id="top"> 
+<section class="navigation">
+    <div class="nav-container">
+        <div class="brand">
+            <a class="navbar-brand" href="#">Lucie Griette</a>
+        </div>
+        <nav>
+            <div class="nav-mobile">
+                <a id="nav-toggle" href="#"><span></span></a>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a class="single-link" href="#top">Accueil</a>
+                </li>
+                <li>
+                    <a class="single-link" href="#projets">Projets r&eacute;cents</a>
+                </li>
+                <li>
+                    <a class="single-link" href="#Blog">Blog|Articles</a>
+                </li>
+                <li>
+                    <a class="single-link" href="#topAPropos">A Propos</a>
+                </li>
+                <li>
+                    <a class="single-link" href="#contacts">Contacts</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</section>
+</header>  
+
+<!-------------------------------------PROJETS RECENTS-------------------------------->
+
+<section class="container-fluid" id="projets">
+
+    <div class="container">
+
+        <div class=" d-flex justify-content-center">
+            <h1 class="title_projects">PROJETS R&Eacute;CENTS</h1>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 presentation_projets">
+
+                <h2 class="defis_perso">Mes défis personnels</h2>
+                <p class="text_defis text-justify">Défis lancés par les amis,la famille ou par envie, les projets présentés ici sont développés autour de mes passions et mes loisirs.</p>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 presentation_projets">
+
+                <h2 class="defis_pro">Mes défis professionnels</h2>
+                <p class="text_defis text-justify">Défis essentiellement lancés dans un cadre plus professionnel. Mais parmi les projets suivants devinerez-vous lesquels sont créés dans un contexte professionnel &#63; </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+            <img src="{{ asset('assets/img/hexagomusees.png') }}" alt="image de fond" class="img-projet1 img-fluid" width="auto">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+            <img src="{{ asset('assets/img/genealogie.png') }}" alt="" class="img-projet2 img-fluid">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+            <img src="{{ asset('assets/img/wordpress2.png') }}" alt="" class="img-projet3 img-fluid">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+            <img src="{{ asset('assets/img/fablab.png') }}" alt="" class="img-projet3 img-fluid">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+            <img src="{{ asset('assets/img/hexagomusees.png') }}" alt="" class="img-projet1 img-fluid">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+            <img src="{{ asset('assets/img/genealogie.png') }}" alt="" class="img-projet2 img-fluid">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+            <img src="{{ asset('assets/img/wordpress2.png') }}" alt="" class="img-projet3 img-fluid">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+            <img src="{{ asset('assets/img/fablab.png') }}" alt="" class="img-projet3 img-fluid">
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-------------------------------------BLOG/ARTICLES RECENTS--------------------------------------->
+
+<section class="container-fluid blog">
+
+    <div class="container">
+
+        <div class="d-flex justify-content-center blog-title">
+            <h1 id="Blog">BLOG|ARTICLES</h1>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-4" style="width: 20rem;">
+                <img class="card-img-top img-fluid" src="{{ asset('assets/img/daiga-ellaby-354483.jpg') }}" alt="photo d'en-tête du premier article">
+                <div class="card-block">
+                    <h2 class="card-title">La modélisation 3D et la réalité virtuelle</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget odio consectetur, pulvinar lacus et, molestie justo. Morbi lacinia, metus sed sollicitudin rhoncus, nibh orci bibendum felis, et condimentum lectus sapien in nunc.</p>
+                    <!-- <a href="#" class="btn btn-primary">Lire plus</a>-->
+                </div>
+            </div>
+
+            <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-4" style="width: 20rem;">
+                <img class="card-img-top img-fluid" src="{{ asset('assets/img/francesco-gallarotti-72600.jpg') }}" alt="photo d'en-tête du deuxième article">
+                <div class="card-block">
+                    <h2 class="card-title">Do you speak english &#63;</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget odio consectetur, pulvinar lacus et, molestie justo. Morbi lacinia, metus sed sollicitudin rhoncus, nibh orci bibendum felis, et condimentum lectus sapien in nunc.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-------------------------------------A PROPOS-------------------------------------------------->
+
+<section class="container-fluid" id="topAPropos">
+    <div class="container">
+
+        <div class="d-flex justify-content-center">
+            <h1 class="apropos_title" id="titre-apropos">A PROPOS</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <img src="{{ asset('assets/img/portrait_dessin.jpg') }}" alt="dessin d'un portrait" class="portrait img-fluid">
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 text_apropos">
+
+                <p> Je suis une développeuse web junior formée au sein de l'Access Code School (labellisée grande école du Numérique). C'est après un parcours académique qui a exploré   </p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-------------------------------------CONTACTS-------------------------------------------------->
+
+<section class="container-fluid contacts_container">
+
+    <div class="container">
+        <div class="d-flex justify-content-start contacts_title">
+            <h1 id="contacts">CONTACTEZ-MOI &#33;</h1>
+        </div>
+
+
+        <form action="page.php" method="post" class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <input class="form-control form-control-md" type="text" name="name" placeholder="Votre nom">
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <input class="form-control form-control-md" type="email" name="email" placeholder="Votre email">
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <textarea class="form-control form-control-md" type="textarea" name="message" placeholder="Votre message"></textarea>
+            </div>
+        </form>
+
+        <div class="d-flex justify-content-center">
+            <button type="submit" name="button" class="button btn-lg">ENVOYER</button>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-------------------------------------FOOTER---------------------------------------------------->
+
+<footer class="container-fluid">
+    <div class="container">
+
+        <div class="d-flex d-flex justify-content-center">
+            <div class="footer">
+                <a target="_blank" href="mentions.html" class="mentions">Mentions L&eacute;gales | Cr&eacute;dits </a>
+            </div>
+
+
+            <div class="footer">
+                <a target="_blank" href="https://www.linkedin.com/in/lucie-griette" class="liens-rsx">| Linkedin | </a>
+                <a target="_blank" href="https://github.com/LGrGr" class="liens-rsx">Github</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+{% endblock %}
