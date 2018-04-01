@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: "Roboto-Medium";
-    src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+    src: url("/assets/fonts/Roboto/Roboto-Medium.ttf");
 }
 
 @font-face {
@@ -32,8 +32,9 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
-    font-size: 25px;
+    padding :0px;
+    margin:0px;
+    /* width: 100vw; */
     font-family: "Roboto-Bold";
 
 }
@@ -58,12 +59,12 @@ header {
 }
 
 .navigation{
-    background-color: #6B8866; 
+    background-color: #6B8866;
 }
 
 nav {
     float: right;
-    color: #fff;  
+    color: #fff;
     font-family :"Roboto-Medium";
     background-color: transparent;
 }
@@ -105,7 +106,7 @@ nav ul li ul li {
 }
 
 .single-link{
-  font-family :"Roboto-Medium"; 
+  font-family :"Roboto-Medium";
   color: #fff;
 }
 
@@ -247,7 +248,7 @@ nav ul li ul li a {
 
 }
 
-img:hover {
+.img:hover {
     color: aqua;
 }
 
@@ -293,6 +294,10 @@ img:hover {
 
 }
 
+.card-img-top{
+  height: 300px;
+
+}
 
 .card-block {
     padding-left: 10px;
@@ -515,7 +520,7 @@ footer {
         padding-top: 0px;
         font-size: 30px;
     }
-    
+
 @media only screen and (max-width: 800px) {
     .nav-mobile {
         display: block;
