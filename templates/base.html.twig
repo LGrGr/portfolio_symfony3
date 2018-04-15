@@ -1,40 +1,10 @@
-{% extends 'header.html.twig' %} {% block body %}
+{% extends 'header.html.twig' %}
 
- <header id="top">
-  <section class="navigation">
-    <div class="nav-container">
-        <div class="brand">
-            <a class="navbar-brand" href="#">Lucie Griette</a>
-        </div>
-        
-        <nav>
-            <div class="nav-mobile">
-                <a id="nav-toggle" href="#"><span></span></a>
-            </div>
-            <ul class="nav-list">
-                <li>
-                    <a class="single-link" href="#top">Accueil</a>
-                </li>
-                <li>
-                    <a class="single-link" href="#projets">Projets r&eacute;cents</a>
-                </li>
-                <li>
-                    <a class="single-link" href="#Blog">Blog|Articles</a>
-                </li>
-                <li>
-                    <a class="single-link" href="#topAPropos">A Propos</a>
-                </li>
-                <li>
-                    <a class="single-link" href="#contacts">Contacts</a>
-                </li>
+{% block body %}
 
-            </ul>
-        </nav>
-    </div>
-</section>
-</header>
 
 <!-------------------------------------PROJETS RECENTS-------------------------------->
+
 
 <section class="container-fluid" id="projets">
 
@@ -64,36 +34,28 @@
 
     <div class="row">
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
             <img src="{{ asset('assets/img/hexagomusees.png') }}" alt="image de fond" class="img-projet1 img-fluid" width="auto">
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
             <img src="{{ asset('assets/img/genealogie.png') }}" alt="" class="img-projet2 img-fluid">
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
             <img src="{{ asset('assets/img/wordpress2.png') }}" alt="" class="img-projet3 img-fluid">
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
             <img src="{{ asset('assets/img/fablab.png') }}" alt="" class="img-projet3 img-fluid">
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
             <img src="{{ asset('assets/img/hexagomusees.png') }}" alt="" class="img-projet1 img-fluid">
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
             <img src="{{ asset('assets/img/genealogie.png') }}" alt="" class="img-projet2 img-fluid">
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
-            <img src="{{ asset('assets/img/wordpress2.png') }}" alt="" class="img-projet3 img-fluid">
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center align-items-center">
-            <img src="{{ asset('assets/img/fablab.png') }}" alt="" class="img-projet3 img-fluid">
         </div>
 
     </div>
@@ -113,7 +75,7 @@
 
         <div class="row justify-content-center">
 
-            <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-4" style="width: 20rem;">
+            <div class="card col-xs-12 col-sm-12 col-md-5 col-lg-5">
                 <img class="card-img-top img-fluid" src="{{ asset('assets/img/daiga-ellaby-354483.jpg') }}" alt="photo d'en-tête du premier article">
                 <div class="card-block">
                     <h2 class="card-title">La modélisation 3D et la réalité virtuelle</h2>
@@ -122,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-4" style="width: 20rem;">
+            <div class="card col-xs-12 col-sm-12 col-md-5 col-lg-5">
                 <img class="card-img-top img-fluid" src="{{ asset('assets/img/francesco-gallarotti-72600.jpg') }}" alt="photo d'en-tête du deuxième article">
                 <div class="card-block">
                     <h2 class="card-title">Do you speak english &#63;</h2>

@@ -33,8 +33,8 @@ header {
     background-size: cover;
     height: 100vh;
     padding :0px;
-    margin:0px;
-    /* width: 100vw; */
+    margin: 0px;
+
     font-family: "Roboto-Bold";
 
 }
@@ -108,6 +108,7 @@ nav ul li ul li {
 .single-link{
   font-family :"Roboto-Medium";
   color: #fff;
+
 }
 
 a:hover {
@@ -119,6 +120,11 @@ nav ul li ul li a {
     line-height: 20px;
     z-index: 1;
     background-color: #3D7446;
+}
+
+.nav {
+  padding : 0px;
+  marin : 0px;
 }
 
 .nav-dropdown {
@@ -194,6 +200,7 @@ nav ul li ul li a {
 
     .navigation {
         background-color: #2D6945;
+
     }
 }
 
@@ -202,6 +209,10 @@ nav ul li ul li a {
     z-index: 10000;
     position: fixed;
     transition: all .6s ease-in-out;
+    padding-left: 0px;
+    padding-right : 0px;
+    margin-left : 0px;
+    margin-right : 0px;
 }
 
 .nav-container {
@@ -296,7 +307,7 @@ nav ul li ul li a {
 
 .card-img-top{
   height: 300px;
-
+  width: auto;
 }
 
 .card-block {

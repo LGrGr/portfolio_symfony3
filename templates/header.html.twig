@@ -17,19 +17,53 @@
     <meta name="twitter:url" content="https://lucieg.promo-5.codeur.online/">
     <meta name="twitter:description" content="Portfolio">
 
-    <link rel="stylesheet" src="{{ asset('/assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="http://localhost:8000/assets/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/assets/styles.css') }}"/>
 
    {% endblock %}
 
+   {% block header %}
+   <header id="top">
+    <section class="navigation container-fluid">
+
+          <div class="brand">
+              <a class="navbar-brand" href="#">Lucie Griette</a>
+          </div>
+
+          <nav>
+              <div class="nav-mobile">
+                  <a id="nav-toggle" href="#"><span></span></a>
+              </div>
+              <ul class="nav-list">
+                  <li>
+                      <a class="single-link" href="#top">Accueil</a>
+                  </li>
+                  <li>
+                      <a class="single-link" href="#projets">Projets r&eacute;cents</a>
+                  </li>
+                  <li>
+                      <a class="single-link" href="#Blog">Blog|Articles</a>
+                  </li>
+                  <li>
+                      <a class="single-link" href="#topAPropos">A Propos</a>
+                  </li>
+                  <li>
+                      <a class="single-link" href="#contacts">Contacts</a>
+                  </li>
+
+              </ul>
+          </nav>
+        
+  </section>
+  </header>
+     {% endblock %}
 
         {% block body %} {% endblock %}
 
 {% block javascripts %}
-   <script src="{{ asset('/assets/js/jquery-3.2.1.min.js')}}"></script>
-    <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
 
-     <script src=""></script>
-    <script src="{{ asset('/assets/js/script.js') }}"></script>
+    <script src="http://localhost:8000/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="http://localhost:8000/assets/js/bootstrap.min.js"></script>
+    <script src="http://localhost:8000/assets/js/script.js"></script>
 {% endblock %}
